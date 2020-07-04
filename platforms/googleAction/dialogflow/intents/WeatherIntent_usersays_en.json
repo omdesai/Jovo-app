@@ -1,0 +1,66 @@
+[
+	{
+		"data": [
+			{
+				"text": "What is the weather at ",
+				"userDefined": false
+			},
+			{
+				"text": "zipCode",
+				"userDefined": true,
+				"alias": "zipCode",
+				"meta": "@sys.number"
+			}
+		],
+		"isTemplate": false,
+		"count": 0
+	},
+	{
+		"data": [
+			{
+				"text": "How is the weather at ",
+				"userDefined": false
+			},
+			{
+				"text": "zipCode",
+				"userDefined": true,
+				"alias": "zipCode",
+				"meta": "@sys.number"
+			}
+		],
+		"isTemplate": false,
+		"count": 0
+	},
+	{
+		"data": [
+			{
+				"text": "tell me the weather in the zipcode ",
+				"userDefined": false
+			},
+			{
+				"text": "zipCode",
+				"userDefined": true,
+				"alias": "zipCode",
+				"meta": "@sys.number"
+			}
+		],
+		"isTemplate": false,
+		"count": 0
+	},
+	{
+		"data": [
+			{
+				"text": "what is the weather like in ",
+				"userDefined": false
+			},
+			{
+				"text": "zipCode",
+				"userDefined": true,
+				"alias": "zipCode",
+				"meta": "@sys.number"
+			}
+		],
+		"isTemplate": false,
+		"count": 0
+	}
+]

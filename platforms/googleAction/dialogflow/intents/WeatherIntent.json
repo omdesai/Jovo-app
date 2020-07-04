@@ -1,0 +1,17 @@
+{
+	"name": "WeatherIntent",
+	"auto": true,
+	"webhookUsed": true,
+	"responses": [
+		{
+			"parameters": [
+				{
+					"isList": false,
+					"name": "zipCode",
+					"value": "$zipCode",
+					"dataType": "@sys.number"
+				}
+			]
+		}
+	]
+}

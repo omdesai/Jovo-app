@@ -1,0 +1,71 @@
+{
+  "invocation": "my test app",
+  "intents": [
+    {
+      "name": "WeatherIntent",
+      "phrases": ["What is the weather at {zipCode}", "How is the weather at {zipCode}", "tell me the weather in the zipcode {zipCode}", "what is the weather like in {zipCode}"],
+	  "inputs": [
+        {
+          "name": "zipCode",
+          "type": {
+            "alexa": "AMAZON.PostalAddress",
+            "dialogflow": "@sys.number"
+          }
+        }
+      ]
+    },
+    {
+      "name": "MyNameIsIntent",
+      "phrases": ["{name}", "my name is {name}", "i am {name}", "you can call me {name}"],
+      "inputs": [
+        {
+          "name": "name",
+          "type": {
+            "alexa": "AMAZON.US_FIRST_NAME",
+            "dialogflow": "@sys.given-name"
+          }
+        }
+      ]
+    }
+  ],
+  "alexa": {
+    "interactionModel": {
+      "languageModel": {
+        "intents": [
+          {
+            "name": "AMAZON.CancelIntent",
+            "samples": []
+          },
+          {
+            "name": "AMAZON.HelpIntent",
+            "samples": []
+          },
+          {
+            "name": "AMAZON.StopIntent",
+            "samples": []
+          }
+        ]
+      }
+    }
+  },
+  "dialogflow": {
+    "intents": [
+      {
+        "name": "Default Fallback Intent",
+        "auto": true,
+        "webhookUsed": true,
+        "fallbackIntent": true
+      },
+      {
+        "name": "Default Welcome Intent",
+        "auto": true,
+        "webhookUsed": true,
+        "events": [
+          {
+            "name": "WELCOME"
+          }
+        ]
+      }
+    ]
+  }
+}
